@@ -13,7 +13,7 @@ public class test {
         long a = Long.parseLong(String.valueOf(str));
         return a;
     }
-
+//as
 
     public static void main(String[] args) {
 
