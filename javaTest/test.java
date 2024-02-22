@@ -1,26 +1,13 @@
 package com.practice.javaTest;
 
+import java.util.Arrays;
+
 public class test {
 
-    public static long reverse(int x) {
-        StringBuilder str = new StringBuilder(String.valueOf(x));
-        str.reverse();
-        String str2 = str.toString();
-        if (str2.contains("-")) {
-            str.deleteCharAt(str2.indexOf("-"));
-            str.insert(0, "-");
-        }
-        long a = Long.parseLong(String.valueOf(str));
-        return a;
-    }
-//as
-
     public static void main(String[] args) {
-
-        int num = -1534236460;
-        System.out.println(test.reverse(num));
-
-
+       int []arr={3,1,6,8,2,7};
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
 
     }
 }
