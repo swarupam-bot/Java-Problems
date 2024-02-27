@@ -1,7 +1,7 @@
 package com.practice.javaTest;
 
 public class test {
-
+        //palindrom
     public static boolean PalindromCheck(String str)
     {
         boolean pal=true;
