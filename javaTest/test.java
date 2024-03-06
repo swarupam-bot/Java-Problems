@@ -13,7 +13,7 @@ public class test {
         String str="(){}[]";
         for(int i=0;i<str.length();i+=2)
         {
-
+//this is the commment
 
             System.out.println(str.charAt(i)+" "+str.charAt(i+1));
         }
