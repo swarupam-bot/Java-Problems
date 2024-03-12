@@ -6,7 +6,6 @@ public class wordPatternPN260 {
     public static boolean wordPattern(String pattern, String s) {
     String[] words=s.split(" ");
 //this is comment
-
         if(words.length!=pattern.length())
     {
         return false;
