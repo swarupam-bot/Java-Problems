@@ -3,13 +3,11 @@ public class mergeTwoArraysShort {
     public static int [] MergeTwoArrays(int [] arr1,int [] arr2)
     {
         int [] finalArr=new int[arr1.length+arr2.length];
-
         for(int j=0;j<arr1.length;j++)
         {
             finalArr[j]=arr1[j];
             finalArr[arr1.length+j]=arr2[j];
         }
-
         for(int i=0;i<finalArr.length;i++)
         {
             for (int j=0;j<i;j++)
