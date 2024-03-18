@@ -10,7 +10,7 @@ public class test {
 
 
 
-
+//working on the remove dupliacate value
     }
 
 
