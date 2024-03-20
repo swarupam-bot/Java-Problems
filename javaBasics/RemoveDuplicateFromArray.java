@@ -6,7 +6,7 @@ import java.util.List;
 public class RemoveDuplicateFromArray {
     public static void main(String[] args) {
         int[] nums = {1, 2, 2, 4, 4, 4, 5};
-
+            //this is comment
         System.out.print("old array : ");
         for(int k:nums)
         {
