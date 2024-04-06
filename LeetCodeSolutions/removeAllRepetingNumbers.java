@@ -1,12 +1,9 @@
-package com.practice.javaTest;
+package com.practice.LeetCodeSolutions;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class test {
-// this is a comments
-
+public class removeAllRepetingNumbers {
     public static void main(String[] args) {
 
         int[] arr = {1, 2, 3, 4, 5, 3, 5,6,9, 2, 2};
