@@ -6,7 +6,7 @@ public class test {
 // this is a comments
 
     public static void main(String[] args) {
-        System.out.println("hello swaru");
+        System.out.println("This is swarupam ");
 
 
     }
