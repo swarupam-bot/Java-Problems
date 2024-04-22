@@ -1,10 +1,10 @@
 package com.practice.javaBasics;
 abstract class AbstractJava {
 
-    private String animalSound;
+   private String animalSound;
 
 
-    String name="meow";
+ String name="meow";
 
 }
 class Dog extends AbstractJava{

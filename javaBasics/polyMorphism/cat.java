@@ -6,7 +6,7 @@ public class cat extends animalsound {
         System.out.println("cat meow ");
     }
 
-    @Override
+   // @Override
     public void animalSound(int a)
     {
         for (int i=0;i<a;i++)
