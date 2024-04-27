@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class CheckVowelCount {
 
-            public static void main(String[] args) {
+    public static void main(String[] args) {
           char []vowel={'a','e','i','o','u'};
             String name="swarupafjosfln hv3hfowjeofjfwqjofjqlknfniwqebfqbfm ksf84hijwemnsfm";
             char [] arr=name.toCharArray();
