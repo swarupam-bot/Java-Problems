@@ -1,22 +1,47 @@
 package com.practice.javaTest;
 
+import org.apache.poi.ss.usermodel.*;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 public class test {
-    public static void main(String[] args) {
+   public static FileInputStream fis;
+    static Workbook workbook;
 
-        char[] arr="II LLOOVVEE YYOOUU".toCharArray();
-        char temp=' ';
-        String newStr="";
-        for(char c:arr)
-        {
-            if(c!=temp)
+    public static void main(String[] args) throws IOException {
+        try {
+           fis =new FileInputStream("javaBasics/DataProvider/Employee.xlsx");
+
+            workbook= WorkbookFactory.create(fis);
+
+            Sheet sheet=workbook.getSheetAt(0);
+
+
+            for(Row row:sheet)
             {
-                temp=c;
-                newStr+=c;
+                for (Cell cell:row)
+                {
+                    System.out.print(cell.toString()+"  ");
+                }
+                System.out.println();
             }
+
+
         }
-        System.out.println(newStr);
 
+        catch (Exception e)
+        {
+            e.printStackTrace();
 
+        }
+        finally {
+
+            workbook.close();
+            fis.close();
+
+        }
 
 
     }
