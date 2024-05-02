@@ -1,13 +1,15 @@
 package com.practice.javaBasics;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class findNonRepatingChar {
 
-    public static char nonRepetingChar(String s)
+    public static List<Character> nonRepetingChar(String s)
     {
         char[] ch = s.toCharArray();
-        char chr = '\0'; // Initialize chr with a default value
+        List<Character> chr=new ArrayList<>();
 
         HashMap<Character, Integer> hmap = new HashMap<>();
 
@@ -18,23 +20,21 @@ public class findNonRepatingChar {
                 hmap.put(ch[i], 1);
             }
         }
-
         for (char c : ch) {
-            System.out.println(c+ "  "+hmap.get(c));
-            break;
-         //   if (hmap.get(c).equals(1)) {
-          //      chr = c;
-              //  break; // Exit the loop once the first non-repeating character is found
-          //  }
+            if(hmap.get(c)==1)
+            {
+                chr.add(c);
+            }
         }
-
         return chr;
-
     }
 
     public static void main(String[] args) {
 
-        System.out.println(nonRepetingChar("hello"));
+        for (char c:nonRepetingChar("hello"))
+        {
+            System.out.println(c);
+        }
 
 
     }

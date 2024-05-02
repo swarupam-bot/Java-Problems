@@ -17,7 +17,7 @@ public class findMissingNumInArray {
     public static void main(String[] args) {
         int[] arr={1,3,4,5};
 
-        int missNum=missingNumber(arr,5);
+        int missNum=missingNumber(arr,3);
 
         System.out.println(missNum);
 

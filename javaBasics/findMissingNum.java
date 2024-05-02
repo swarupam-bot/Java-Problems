@@ -7,10 +7,9 @@ import java.util.List;
 public class findMissingNum {
     public static void main(String[] args) {
 
-        int [] arr={1,2,4,7,10};
+        int [] arr={1,2,5,7,10};
         List<Integer> lis=new ArrayList<>();
         HashSet<Integer> Hset=new HashSet<>();
-
 
             for (int a:arr)
             {
@@ -22,14 +21,12 @@ public class findMissingNum {
                 if(!lis.contains(i))
                 {
                     Hset.add(i);
-
                 }
-
             }
 
             for (int i:Hset)
             {
-                System.out.println(i);
+                System.out.print(" "+i);
             }
 
 
