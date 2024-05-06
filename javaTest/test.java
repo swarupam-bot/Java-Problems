@@ -1,55 +1,24 @@
 package com.practice.javaTest;
+import java.util.*;
 
-import org.apache.poi.ss.formula.functions.Column;
-import org.apache.poi.ss.usermodel.*;
-
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.HashSet;
 
 public class test {
-   public static FileInputStream fis;
-    static Workbook workbook;
+    public static void main(String[] args) {
 
-    public static void main(String[] args) throws IOException {
-        try {
-           fis =new FileInputStream("javaBasics/DataProvider/Employee.xlsx");
-
-            workbook= WorkbookFactory.create(fis);
-
-            Sheet sheet=workbook.getSheetAt(0);
-            HashMap<String,String> hmap=new HashMap<>();
-
-            for(Row row:sheet)
-            {
-
-                for(Cell value: row)
-                {
-                    System.out.print(value+" ");
-                }
-                System.out.println();
-            }
+      int [] arr={2,3,1,5,4};
+      String str="swarupam";
 
 
+        System.out.println(str.);
 
+        HashSet<Integer> set=new HashSet<>();
 
-
-
-        }
-
-        catch (Exception e)
+        for(int a:arr)
         {
-            e.printStackTrace();
-
+            set.add(a);
         }
-        finally {
+        System.out.println(set);
 
-            workbook.close();
-            fis.close();
-
-        }
 
 
     }
