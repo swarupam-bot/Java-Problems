@@ -3,22 +3,29 @@ import java.util.*;
 
 
 public class test {
+
+    public static  Boolean loginFunc(String str,int Pass)
+    {
+        Boolean auth=false;
+        HashMap<String,Integer> LoginCred=new HashMap<>();
+        LoginCred.put("swarupam",1234);
+        LoginCred.put("rohit",1235);
+        LoginCred.put("akash",2142);
+
+        for(String str2: LoginCred.keySet())
+        {
+            if(LoginCred.get(str2).equals(Pass) && str2.equals(str))
+            {
+                auth=  true;
+            }
+
+        }
+        return auth;
+
+    }
     public static void main(String[] args) {
 
-      int [] arr={2,3,1,5,4};
-      String str="swarupam";
-
-
-        System.out.println(str.);
-
-        HashSet<Integer> set=new HashSet<>();
-
-        for(int a:arr)
-        {
-            set.add(a);
-        }
-        System.out.println(set);
-
+        System.out.println(loginFunc("swarupam",1234));
 
 
     }
