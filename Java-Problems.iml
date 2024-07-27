@@ -10,11 +10,10 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://$USER_HOME$/Downloads/jar_files" />
+          <root url="jar://$USER_HOME$/Downloads/poi-5.2.5.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://$USER_HOME$/Downloads/jar_files" recursive="false" />
       </library>
     </orderEntry>
   </component>

@@ -100,7 +100,7 @@ public class ReadDataFromExcel {
     }
 
     public static void main(String[] args) throws IOException {
-        System.out.println(getDataFromExcel("ID001","Name","javaBasics/DataProvider/Employee.xlsx"));
+        System.out.println(getDataFromExcel("ID001","Name","/Users/swarupamkumar/IdeaProjects/Java-Problems/javaBasics/DataProvider/Employee.xlsx"));
     }
 
 }

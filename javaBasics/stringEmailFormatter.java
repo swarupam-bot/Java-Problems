@@ -1,7 +1,5 @@
 package com.practice.javaBasics;
 
-import com.practice.javaTest.test;
-
 public class stringEmailFormatter {
     public static String EmailFormatter(String str)
     {
